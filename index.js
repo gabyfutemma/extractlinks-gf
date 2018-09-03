@@ -5,9 +5,7 @@ module.exports.getLinksFromMd = function getLinksFromMd(text) {
 
   if (typeof text === "number") {
     throw new TypeError("Please insert a text!");
-  }
-
-  if (typeof text === "string") {
+  } else {
     var result = [];
     let regex_url = new RegExp (/(https?:\/\/)?(www\.)?[a-z0-9]*(\.\w{2,})(\.[a-z0-9]*)?(\/.[a-z0-9]*)?(\/.[a-z0-9]*)?/gi);
     let regex_markdown = new RegExp (/(?<=\[)([a-z0-9]*)(?=\])/gi);

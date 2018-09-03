@@ -10,7 +10,7 @@ Example:
 
 ```
 $node
-> let extractLib = require("gf-extractlinks")
+> let extractLib = require("gftm-extractlinks")
 > extractLib.getLinksFromMd( "Oi você quer entrar no site [google](www.google.com) ?"); //[{href: "www.google.com", text: "google"}]
 ```
 
@@ -23,7 +23,7 @@ $node
 ## Installation
 - You must have node + npm installed.
 - Installation Guide, visit the [official site](https://www.npmjs.com/get-npm).
-- Proceed installation `$npm install gf-extractlinks`
+- Proceed installation `$npm install gftm-extractlinks`
 
 
 ## Roadmap of project

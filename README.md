@@ -33,5 +33,5 @@ $node
 **version 1.0.1 (released)**
 - Using eslint in files;
 
-**version 1.0.0 (released)**
+**version 1.0.0**
 - Functionalities:  extract links and text from markdown;

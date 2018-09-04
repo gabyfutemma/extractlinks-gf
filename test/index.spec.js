@@ -28,18 +28,18 @@ describe("index", function() {
 
     describe("When text is a string with one url", function() {
       it("should return an array with object having url and text from markdown", () => {
-        expect(index.getLinksFromMd("Oi você quer entrar no site [google](www.google.com) ?")).to.equal(JSON.stringify([{href: "www.google.com", text: "google"}]));
+        expect(index.getLinksFromMd("Oi você quer entrar no site [google](www.google.com) ?")).to.deep.equal([{href: "www.google.com", text: "google"}]);
       });
     });
 
     describe("When text is a string with three urls", function() {
       it("should return an array with objects", () => {
         expect(index.getLinksFromMd("[labore](https://en.wiktionary.org/wiki/labore), et [dolore](https://en.wiktionary.org/wiki/dolore), henlow [foo](http://foo.com)"))
-          .to.equal(JSON.stringify([
+          .to.deep.equal([
             {href: "https://en.wiktionary.org/wiki/labore", text: "labore"},
             {href: "https://en.wiktionary.org/wiki/dolore", text: "dolore"},
             {href: "http://foo.com", text: "foo"},
-          ]));
+          ]);
       });
     });
 

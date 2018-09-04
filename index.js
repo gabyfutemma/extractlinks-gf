@@ -3,7 +3,7 @@ module.exports.getLinksFromMd = function getLinksFromMd(text) {
     throw new RangeError("You must enter a parameter!");
   }
 
-  if (typeof text === "number") {
+  if (typeof text === "number" || typeof text !== "string") {
     throw new TypeError("Please insert a text!");
   } else {
     var result = [];
@@ -13,10 +13,10 @@ module.exports.getLinksFromMd = function getLinksFromMd(text) {
     let txts_md = text.match(regex_markdown);
     if (urls !== null && txts_md !== null) {
       result = urls.map((url, i) => ({
-        href: url,
-        text: txts_md[i]
+        "href": url,
+        "text": txts_md[i]
       }));
     }
-    return urls ? JSON.stringify(result) : [];
+    return urls ? result : [];
   }
 };

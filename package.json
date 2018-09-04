@@ -1,6 +1,6 @@
 {
   "name": "gftm-extractlinks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "extract links from a string",
   "main": "index.js",
   "directories": {

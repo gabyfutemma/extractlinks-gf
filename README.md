@@ -14,7 +14,10 @@ $node
 > extractLib.getLinksFromMd( "Oi você quer entrar no site [google](www.google.com) ?"); //[{href: "www.google.com", text: "google"}]
 ```
 
-## Version 1.0.1 (released)
+## Version 1.0.2 (released)
+- Add devDependencies;
+
+## Version 1.0.1
 - Functions refactored;
 
 ## Version 1.0.0

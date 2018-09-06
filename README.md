@@ -14,6 +14,8 @@ $node
 > extractLib.getLinksFromMd( "Oi você quer entrar no site [google](www.google.com) ?"); //[{href: "www.google.com", text: "google"}]
 ```
 
+## Version 1.0.1 (released)
+- Functions refactored;
 
 ## Version 1.0.0
 - Functionalities: extract links and text from markdown;

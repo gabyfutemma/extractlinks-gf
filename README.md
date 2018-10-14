@@ -36,4 +36,4 @@ $node
 - README in pt_br;
 
 **version 1.0.0 (released)**
-- Functionalities: extract links and text from markdown;
+- Functionalities: extract links and text from markdown.
